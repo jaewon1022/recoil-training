@@ -4,6 +4,10 @@ frontend:
     preBuild:
       commands:
         - npm ci
+    version change:
+      commands:
+        - nvm i 18.17.0
+        - nvm use 18.17.0
     build:
       commands:
         - npm run build
